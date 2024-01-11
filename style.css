@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #e3f9ff;
+
+  /* This will align the calculator into the centre of the webpage. */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  /* The background-color defines the color of the background */
+  background-color: #3a4452;
+  /* The padding defines the space between the content inside the border */
+  padding: 20px;
+  /* The border radius, make the edges of the border smoother, not sharp */
+  border-radius: 10px;
+}
+
+/* This targets all the input elements within the calculator div */
+.calculator form input {
+  border: 0;
+  outline: 0;
+  /* Both the width and the height here specify the size of the calculator buttons */
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  /* The box shadow specifies the shadow around the calculator buttons */
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* This background: transparent 'removes' the background of the buttons */
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px; 
+}
+
+form input.operator {
+  color: #33ffd8
+}
